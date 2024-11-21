@@ -32,5 +32,26 @@
     </style>
 </head>
 <body>
+    <h1>Contador con Etiquetas y Botones</h1>
+    <div>
+        <span id="etiqueta1">0</span>
+        <span id="etiqueta2">0</span>
+    </div>
+    <div>
+        <button onclick="incrementarEtiqueta1()">Aumenta 2 Unidades a Etiqueta 1</button>
+        <button onclick="incrementarEtiqueta2()">Aumenta 3 Unidades a Etiqueta 2</button>
+    </div>
+
+    <script>
+        function incrementarEtiqueta1() {
+            const etiqueta1 = document.getElementById("etiqueta1");
+            etiqueta1.innerText = parseInt(etiqueta1.innerText) + 2;
+        }
+
+        function incrementarEtiqueta2() {
+            const etiqueta2 = document.getElementById("etiqueta2");
+            etiqueta2.innerText = parseInt(etiqueta2.innerText) + 3;
+        }
+    </script>
 </body>
 </html>
